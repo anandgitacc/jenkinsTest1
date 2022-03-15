@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Facebook Login/credential verification",
+        "description": "",
+        "id": "facebook-details-checking;facebook-login/credential-verification;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5320325300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on facebook login page",
+            "match": {
+              "location": "ReportStepDef.user_is_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 486070100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter \"anand\" and \"anand@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anand\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"anand@123\"",
+                  "offset": 30
+                }
+              ],
+              "location": "ReportStepDef.user_should_enter_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62502800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should click the login button",
+            "match": {
+              "location": "ReportStepDef.user_should_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should verify the success message",
+            "match": {
+              "location": "ReportStepDef.user_should_verify_the_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook details checking",
+    "description": "",
+    "id": "facebook-details-checking",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/FacebookLoginOutline.feature",
+    "tags": []
+  }
+]
